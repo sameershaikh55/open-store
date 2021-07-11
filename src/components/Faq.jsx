@@ -7,7 +7,7 @@ import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 // IMPORTING IMAGES
-import { BsArrowRight } from "react-icons/bs";
+import { BiRightArrowAlt } from "react-icons/bi";
 
 const useStyles = makeStyles((theme) => ({
 	heading: {
@@ -33,9 +33,9 @@ export default function Faq() {
 		<div className="faq_container">
 			<div className="page_container">
 				<div className="container-fluid">
-					<h2 className="fw-bold mb-4">FAQ</h2>
+					<h2 className="fw-bold mb-4 ps-2">FAQ</h2>
 					<div className="row">
-						<div className="col-12 px-4 px-md-2 col-md-8 mx-auto mx-sm-0 me-sm-auto">
+						<div className="col-12 px-4 px-md-0 col-md-8 mx-auto mx-sm-0 me-sm-auto">
 							<Accordion
 								expanded={expanded === "panel1"}
 								onChange={handleChange("panel1")}
@@ -150,7 +150,8 @@ export default function Faq() {
 										href=""
 										className="fw-bold purpleColor text-decoration-none"
 									>
-										Find out if your business is a fit <BsArrowRight />
+										Find out if your business is a fit
+										<BiRightArrowAlt fontSize="1.2rem" />
 									</a>
 								</div>
 							</div>

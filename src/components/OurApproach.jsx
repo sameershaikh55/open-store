@@ -1,7 +1,7 @@
 import React from "react";
 
 // IMPORTING IMAGES
-import { BsArrowRight } from "react-icons/bs";
+import { BiRightArrowAlt } from "react-icons/bi";
 
 const OurApproach = () => {
 	const data = [
@@ -26,28 +26,33 @@ const OurApproach = () => {
 		<div className="approach_container">
 			<div className="page_container">
 				<div className="container-fluid">
-					<h3>Our Approach</h3>
-					<div className="row px-2">
-						{data.map((prev, i) => {
-							return (
-								<div
-									key={i}
-									className="col-12 col-sm-6 approach_card d-flex align-items-center"
-								>
-									<div className="box"></div>
-									<div className="ms-3">
-										<h6 className="fw-bold mb-1">{prev.title}</h6>
-										<p className="lightColor mb-0">{prev.desc}</p>
-									</div>
-								</div>
-							);
-						})}
-					</div>
+					<div className="row">
+						<div className="col-11 col-md-12 mx-auto">
+							<h3>Our Approach</h3>
+							<div className="row px-2">
+								{data.map((prev, i) => {
+									return (
+										<div
+											key={i}
+											className="col-12 col-sm-6 approach_card d-flex align-items-center"
+										>
+											<div className="box"></div>
+											<div className="ms-3">
+												<h6 className="fw-bold mb-1">{prev.title}</h6>
+												<p className="lightColor mb-0">{prev.desc}</p>
+											</div>
+										</div>
+									);
+								})}
+							</div>
 
-					<div className="bottom_link">
-						<a href="" className="fw-bold purpleColor text-decoration-none">
-							Find out if your business is a fit <BsArrowRight />
-						</a>
+							<div className="bottom_link">
+								<a href="" className="fw-bold purpleColor text-decoration-none">
+									Find out if your business is a fit
+									<BiRightArrowAlt fontSize="1.2rem" />
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -1,7 +1,7 @@
 import React from "react";
 
 // IMPORTING IMAGES
-import { BsArrowRight } from "react-icons/bs";
+import { BiRightArrowAlt } from "react-icons/bi";
 
 // IMPORTING IMAGES
 import leave1 from "../assets/leave1.PNG";
@@ -17,7 +17,7 @@ const GoodHands = () => {
 			<div className="page_container">
 				<div className="container-fluid">
 					<div className="row">
-						<div className="col-10 col-lg-7 mx-auto mx-sm-0 me-sm-auto">
+						<div className="col-11 col-lg-7 mx-auto mx-sm-0 me-sm-auto">
 							<h3 className="fw-bold">Leave your business in good hands.</h3>
 							<p className="firstP lightColor mb-0">
 								We’re a proven group of e-commerce experts and operators who
@@ -46,7 +46,8 @@ const GoodHands = () => {
 										className="fw-bold text-decoration-none purpleColor"
 										href=""
 									>
-										Join our family of founders <BsArrowRight />
+										Join our family of founders
+										<BiRightArrowAlt fontSize="1.2rem" />
 									</a>
 								</button>
 							</div>
