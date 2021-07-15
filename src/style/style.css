@@ -4,6 +4,7 @@
   margin: 0%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -67,8 +68,12 @@ html {
   color: #5a59e4;
 }
 
+.themeColor {
+  color: #3f3cd7;
+}
+
 .searchBtn {
-  background-color: #375ad6;
+  background-color: #3f3cd7;
   font-weight: 500;
   letter-spacing: 0.3px;
   border-radius: 0.4rem;
@@ -189,14 +194,15 @@ html {
 
 .hero_container h1 {
   font-weight: 700;
+  font-size: 4.5rem;
 }
 
 .hero_container p {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .hero_container .inp_container input {
-  padding-left: 3.8rem;
+  padding-left: 4.4rem;
   height: 38px;
 }
 
@@ -217,17 +223,16 @@ html {
 }
 
 .hero_container .inp_container input:focus {
-  border: none;
   outline: none;
 }
 
 .hero_container .inp_container h6 {
   position: absolute;
   left: 2%;
-  top: 48%;
+  top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  font-size: 1.02rem;
+  font-size: 1.1rem;
 }
 
 .hero_container button {
@@ -235,7 +240,7 @@ html {
 }
 
 .hero_container .newsletter_container {
-  margin-top: 8rem;
+  margin-top: 5rem;
   margin-bottom: 8rem;
 }
 
@@ -283,33 +288,12 @@ html {
   margin-right: 1.2rem;
 }
 
-.offer_card .img_placeholder {
-  border-radius: 50%;
-  background-color: #c8cdf6;
-  opacity: 0.3;
+.offer_card img {
+  width: 40%;
 }
 
-.offer_card:nth-child(1) .img_placeholder {
-  height: 60px;
-  width: 64px;
-}
-
-.offer_card:nth-child(2) {
-  margin-top: 5rem;
-}
-
-.offer_card:nth-child(2) .img_placeholder {
-  height: 60px;
-  width: 68px;
-}
-
-.offer_card:nth-child(3) {
-  margin-top: 5rem;
-}
-
-.offer_card:nth-child(3) .img_placeholder {
-  height: 60px;
-  width: 58px;
+.offer_card:nth-child(3) p {
+  letter-spacing: 0.2px;
 }
 
 .approach_container {
@@ -406,7 +390,7 @@ html {
 }
 
 .stackUp_container .row .stackSection button {
-  background: #375ad6;
+  background: #3f3cd7;
   font-weight: 500;
   padding: 0.4rem 0rem;
 }
