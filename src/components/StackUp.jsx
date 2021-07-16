@@ -3,7 +3,6 @@ import React from "react";
 // IMPORTING ICONS
 import cross from "../assets/cross.svg";
 import check from "../assets/check.svg";
-import { BiRightArrowAlt } from "react-icons/bi";
 
 const StackUp = () => {
 	return (
@@ -24,8 +23,10 @@ const StackUp = () => {
 						<div className="row">
 							<div className="upperStackSection col-12 col-md-6 order-1 order-md-0">
 								<div className="stackSection stack2 mx-auto">
-									<div className="box"></div>
-									<h4 className="text-center mt-3">Traditional Brokers</h4>
+									<h5 className="mt-3 head_color fw-bold">
+										Traditional Brokers
+									</h5>
+									<hr className="my-4" />
 									<div>
 										<div className="mt-3 d-flex align-items-center">
 											<img src={cross} alt="cross" />
@@ -55,9 +56,8 @@ const StackUp = () => {
 							</div>
 							<div className="col-12 col-md-6">
 								<div className="stackSection stack1 mx-auto">
-									<div className="box"></div>
-									<h4 className="text-center mt-3">OpenStore</h4>
-
+									<h5 className="mt-3 head_color fw-bold">OpenStore</h5>
+									<hr className="my-4" />
 									<div>
 										<div className="mt-3 d-flex align-items-center">
 											<img src={check} alt="cross" />
@@ -79,14 +79,34 @@ const StackUp = () => {
 											</p>
 										</div>
 									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-									<button className="d-none d-md-block mt-5 w-100 border-0 rounded-3 text-white mb-0">
-										Get Your Free Offer <BiRightArrowAlt fontSize="1.4rem" />
+					{/* NEWSLETTER START */}
+					<div className="row news_letter_cont">
+						<div className="col-7 mx-auto">
+							<div className="newsletter_container2 row px-3">
+								<div className="col-12 col-sm-9">
+									<div className="inp_container position-relative">
+										<input
+											type="text"
+											className="w-100 rounded-3 border-0"
+											placeholder="Enter your store website"
+										/>
+										<h6>http://</h6>
+									</div>
+								</div>
+								<div className="col-12 col-sm-3 mt-3 mt-sm-0 ps-2 ps-sm-0">
+									<button className="searchBtn small mb-0 w-100 text-white border-0">
+										Get My Free Offer
 									</button>
 								</div>
 							</div>
 						</div>
 					</div>
+					{/* NEWSLETTER END */}
 				</div>
 			</div>
 		</div>

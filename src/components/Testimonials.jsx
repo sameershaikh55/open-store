@@ -30,15 +30,14 @@ const Testimonials = () => {
 		<div className="testimonials_container">
 			<div className="page_container">
 				<div className="container-fluid">
-					<h2 className="text-center fw-bold">Testimonials</h2>
+					<h2 className="text-center fw-bold mb-5 head_color">Testimonials</h2>
 
 					<div className="row mt-4">
 						<div className="col-md-12">
 							<Slider {...settings}>
 								<div className="testimonial_card d-flex flex-column justify-content-between">
 									<div>
-										<div className="person_placeholder mx-auto"></div>
-										<p className="mt-3">
+										<p>
 											OpenStore
 											<strong>
 												brought a level of professionalism to the table that was
@@ -56,8 +55,7 @@ const Testimonials = () => {
 								</div>
 								<div className="testimonial_card d-flex flex-column justify-content-between">
 									<div>
-										<div className="person_placeholder mx-auto"></div>
-										<p className="mt-3">
+										<p>
 											I think everything was great. It was very apparent that
 											you guys had prepared well and were very professional.
 											Really loved the tips you gave us even though no offer was

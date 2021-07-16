@@ -33,9 +33,9 @@ export default function Faq() {
 		<div className="faq_container">
 			<div className="page_container">
 				<div className="container-fluid">
-					<h2 className="fw-bold mb-4 ps-2">FAQ</h2>
+					<h2 className="fw-bold mb-5 text-center head_color">FAQ</h2>
 					<div className="row">
-						<div className="col-12 px-4 px-md-0 col-md-8 mx-auto mx-sm-0 me-sm-auto">
+						<div className="col-12 col-md-7">
 							<Accordion
 								expanded={expanded === "panel1"}
 								onChange={handleChange("panel1")}
@@ -46,7 +46,7 @@ export default function Faq() {
 									id="panel1bh-header"
 								>
 									<Typography className={classes.heading}>
-										How do you value my business?
+										How do you create a price for my business?
 									</Typography>
 								</AccordionSummary>
 								<AccordionDetails>
@@ -65,7 +65,9 @@ export default function Faq() {
 									aria-controls="panel2bh-content"
 									id="panel2bh-header"
 								>
-									<Typography className={classes.heading}>Users</Typography>
+									<Typography className={classes.heading}>
+										How do you use the data I provide?
+									</Typography>
 								</AccordionSummary>
 								<AccordionDetails>
 									<Typography>
@@ -85,7 +87,7 @@ export default function Faq() {
 									id="panel3bh-header"
 								>
 									<Typography className={classes.heading}>
-										How do you use the data I provide?
+										How long does the process take?
 									</Typography>
 								</AccordionSummary>
 								<AccordionDetails>
@@ -106,7 +108,7 @@ export default function Faq() {
 									id="panel4bh-header"
 								>
 									<Typography className={classes.heading}>
-										How long does the process take?
+										Am I committing to anything?
 									</Typography>
 								</AccordionSummary>
 								<AccordionDetails>
@@ -117,43 +119,18 @@ export default function Faq() {
 									</Typography>
 								</AccordionDetails>
 							</Accordion>
-							<Accordion
-								expanded={expanded === "panel5"}
-								onChange={handleChange("panel5")}
-							>
-								<AccordionSummary
-									expandIcon={<ExpandMoreIcon />}
-									aria-controls="panel5bh-content"
-									id="panel5bh-header"
-								>
-									<Typography className={classes.heading}>
-										Am I committing to anything?{" "}
-									</Typography>
-								</AccordionSummary>
-								<AccordionDetails>
-									<Typography>
-										Nunc vitae orci ultricies, auctor nunc in, volutpat nisl.
-										Integer sit amet egestas eros, vitae egestas augue. Duis vel
-										est augue.
-									</Typography>
-								</AccordionDetails>
-							</Accordion>
+						</div>
+						<div className="col-4">
+							<p className="lightColor lh-lg">
+								Need help? Feel free to reach out to our team to walk you
+								through the process and answer any questions you might have.
+							</p>
 
-							<div className="mt-4">
-								<p className="lightColor">
-									Need help? Feel free to reach out to our team to walk you
-									through the process and answer any questions you might have.
-								</p>
-
-								<div className="bottom_link">
-									<a
-										href=""
-										className="fw-bold purpleColor text-decoration-none"
-									>
-										Find out if your business is a fit
-										<BiRightArrowAlt fontSize="1.2rem" />
-									</a>
-								</div>
+							<div className="bottom_link mt-4">
+								<a href="" className="fw-bold purpleColor text-decoration-none">
+									Find out if your business is a fit
+									<BiRightArrowAlt fontSize="1.2rem" />
+								</a>
 							</div>
 						</div>
 					</div>
