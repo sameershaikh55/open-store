@@ -11,6 +11,7 @@ import OurApproach from "../components/OurApproach";
 import StackUp from "../components/StackUp";
 import Sidebar from "../components/Sidebar";
 import Testimonials from "../components/Testimonials";
+import PinnedFooter from "../components/PinnedFooter";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,6 +37,7 @@ const Home = () => {
       </div>
       <Testimonials />
       <Faq />
+      <PinnedFooter />
     </div>
   );
 };

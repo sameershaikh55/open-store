@@ -247,6 +247,59 @@ html {
   font-size: 0.78rem;
 }
 
+.newsletter_containerFooter .inp_container {
+  width: 85%;
+}
+
+.newsletter_containerFooter .inp_container input {
+  padding-left: 3.2rem;
+  height: 34px;
+  font-size: 0.8rem;
+}
+
+.newsletter_containerFooter .inp_container input::-webkit-input-placeholder {
+  color: #777777;
+}
+
+.newsletter_containerFooter .inp_container input:-ms-input-placeholder {
+  color: #777777;
+}
+
+.newsletter_containerFooter .inp_container input::-ms-input-placeholder {
+  color: #777777;
+}
+
+.newsletter_containerFooter .inp_container input::placeholder {
+  color: #777777;
+}
+
+.newsletter_containerFooter .inp_container input:focus {
+  outline: none;
+}
+
+.newsletter_containerFooter .inp_container h6 {
+  position: absolute;
+  left: 2.5%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 0.8rem;
+}
+
+.newsletter_containerFooter .searchBtn_cont {
+  width: 15%;
+}
+
+.newsletter_containerFooter input {
+  border: 1px solid #e2e2e2;
+}
+
+.newsletter_containerFooter button {
+  height: 34px;
+  width: 100%;
+  font-size: 0.78rem;
+}
+
 .NavbarContainer {
   width: 100%;
   -webkit-box-align: center;
@@ -274,6 +327,9 @@ html {
 }
 
 .NavbarContainerPinned {
+  position: fixed;
+  top: -10%;
+  left: 0%;
   display: none;
 }
 
@@ -291,6 +347,10 @@ html {
   transition: 0.6s all;
 }
 
+.NavbarContainer.mobilePinned {
+  display: none;
+}
+
 .mobilePinned.sticky {
   display: block;
   position: fixed;
@@ -303,6 +363,18 @@ html {
           box-shadow: 1px 1px 5px #dbdbdb;
   -webkit-transition: 0.6s all;
   transition: 0.6s all;
+}
+
+.pinnedFooter {
+  position: fixed;
+  bottom: -10%;
+  width: 100%;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.pinnedFooter.sticky {
+  bottom: 0%;
 }
 
 .SideBarContainer {

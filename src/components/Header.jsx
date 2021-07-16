@@ -206,7 +206,7 @@ const Header = ({ ClickEvent }) => {
                 </ul>
               </div>
             </div>
-            <hr style={{ opacity: "1" }} className="hrHeader bg-dark" />
+            <hr style={{ opacity: "1" }} className="hrHeader bg-dark mb-0" />
           </div>
         </div>
       </div>

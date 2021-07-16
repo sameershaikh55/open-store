@@ -214,6 +214,48 @@ html {
   }
 }
 
+.newsletter_containerFooter {
+  .inp_container {
+    width: 85%;
+
+    input {
+      padding-left: 3.2rem;
+      height: 34px;
+      font-size: 0.8rem;
+
+      &::placeholder {
+        color: $color1;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    h6 {
+      position: absolute;
+      left: 2.5%;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 0.8rem;
+    }
+  }
+
+  .searchBtn_cont {
+    width: 15%;
+  }
+
+  input {
+    border: 1px solid rgb(226, 226, 226);
+  }
+
+  button {
+    height: 34px;
+    width: 100%;
+    font-size: 0.78rem;
+  }
+}
+
 // HEADER START
 .NavbarContainer {
   width: 100%;
@@ -241,6 +283,9 @@ html {
 
 // STICKY HEADER START
 .NavbarContainerPinned {
+  position: fixed;
+  top: -10%;
+  left: 0%;
   display: none;
 }
 
@@ -257,6 +302,10 @@ html {
 }
 
 // FOR MOBILE START
+.NavbarContainer.mobilePinned {
+  display: none;
+}
+
 .mobilePinned.sticky {
   display: block;
   position: fixed;
@@ -268,8 +317,20 @@ html {
   box-shadow: 1px 1px 5px rgb(219, 219, 219);
   transition: 0.6s all;
 }
-
 // STICKY HEADER END
+
+// PINNED FOOTER START
+.pinnedFooter {
+  position: fixed;
+  bottom: -10%;
+  width: 100%;
+  transition: 0.6s;
+}
+
+.pinnedFooter.sticky {
+  bottom: 0%;
+}
+// PINNED FOOTER END
 
 // ==== SIDEBAR START ====
 .SideBarContainer {
