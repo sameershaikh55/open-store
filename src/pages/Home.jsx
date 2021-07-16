@@ -13,31 +13,31 @@ import Sidebar from "../components/Sidebar";
 import Testimonials from "../components/Testimonials";
 
 const Home = () => {
-	const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-	const OnClick = () => {
-		setIsOpen(!isOpen);
-	};
-	return (
-		<div>
-			<Sidebar ClickEvent={OnClick} isOpen={isOpen} />
-			<div className="upper_section_mobile">
-				<Header ClickEvent={OnClick} />
-				<Hero />
-				<Offers />
-			</div>
-			<div className="middle_section">
-				<GoodHands />
-				<OurApproach />
-			</div>
-			<GetPaid />
-			<div className="pb-5 pb-md-0 upper_section_mobile">
-				<StackUp />
-			</div>
-			<Testimonials />
-			<Faq />
-		</div>
-	);
+  const OnClick = () => {
+    setIsOpen(!isOpen);
+  };
+  return (
+    <div>
+      <Sidebar ClickEvent={OnClick} isOpen={isOpen} />
+      <div className="upper_section_mobile">
+        <Header ClickEvent={OnClick} />
+        <Hero />
+        <Offers />
+      </div>
+      <div id="about" className="middle_section">
+        <GoodHands />
+        <OurApproach />
+      </div>
+      <GetPaid />
+      <div className="pb-5 pb-md-0 upper_section_mobile">
+        <StackUp />
+      </div>
+      <Testimonials />
+      <Faq />
+    </div>
+  );
 };
 
 export default Home;

@@ -7,14 +7,14 @@ import Home from "./pages/Home.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 
 function App() {
-	return (
-		<>
-			<ScrollToTop />
-			<Switch>
-				<Route exact path="/" component={Home} />
-			</Switch>
-		</>
-	);
+  return (
+    <>
+      <ScrollToTop />
+      <Switch>
+        <Route exact path="/" component={Home} />
+      </Switch>
+    </>
+  );
 }
 
 export default App;
