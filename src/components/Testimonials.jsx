@@ -30,24 +30,24 @@ const Testimonials = () => {
 		<div className="testimonials_container">
 			<div className="page_container">
 				<div className="container-fluid">
-					<h2 className="text-center fw-bold mb-5 head_color">Testimonials</h2>
+					<h2 className="text-center textG mb-4 mb-md-5 head_color">
+						Testimonials
+					</h2>
 
 					<div className="row mt-4">
 						<div className="col-md-12">
 							<Slider {...settings}>
 								<div className="testimonial_card d-flex flex-column justify-content-between">
 									<div>
-										<p>
-											OpenStore
-											<strong>
-												brought a level of professionalism to the table that was
-												a breath of fresh air
-											</strong>
+										<p className="testiText head_color textS">
+											OpenStore brought a level of
+											<strong>professionalism</strong> to the table that was{" "}
+											<strong>a breath of fresh air</strong>
 											and we look forward to working with everyone more in the
 											near future!
 										</p>
 									</div>
-									<p className="mb-0">
+									<p className="testiUnder mb-0 underHead_color">
 										<small>
 											Ecommerce founder in the children’s apparel space
 										</small>
@@ -55,7 +55,7 @@ const Testimonials = () => {
 								</div>
 								<div className="testimonial_card d-flex flex-column justify-content-between">
 									<div>
-										<p>
+										<p className="testiText head_color textS">
 											I think everything was great. It was very apparent that
 											you guys had prepared well and were very professional.
 											Really loved the tips you gave us even though no offer was
@@ -63,7 +63,7 @@ const Testimonials = () => {
 											looking into our data.
 										</p>
 									</div>
-									<p className="mb-0">
+									<p className="testiUnder mb-0 underHead_color">
 										<small>Ecommerce founder in the swimwear space</small>
 									</p>
 								</div>

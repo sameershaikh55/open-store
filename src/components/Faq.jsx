@@ -32,8 +32,10 @@ export default function Faq() {
 	return (
 		<div className="faq_container">
 			<div className="page_container">
-				<div className="container-fluid">
-					<h2 className="fw-bold mb-5 text-center head_color">FAQ</h2>
+				<div className="container-fluid px-3">
+					<h2 className="mb-4 mb-md-5 textG text-left text-md-center head_color">
+						FAQ
+					</h2>
 					<div className="row">
 						<div className="col-12 col-md-7">
 							<Accordion
@@ -120,14 +122,17 @@ export default function Faq() {
 								</AccordionDetails>
 							</Accordion>
 						</div>
-						<div className="col-4">
-							<p className="lightColor lh-lg">
+						<div className="col-12 col-sm-6 col-md-4 my-4">
+							<p className="lightColor lh-lg textS">
 								Need help? Feel free to reach out to our team to walk you
 								through the process and answer any questions you might have.
 							</p>
 
 							<div className="bottom_link mt-4">
-								<a href="" className="fw-bold purpleColor text-decoration-none">
+								<a
+									href=""
+									className="fw-bold purpleColor text-decoration-none textS"
+								>
 									Find out if your business is a fit
 									<BiRightArrowAlt fontSize="1.2rem" />
 								</a>

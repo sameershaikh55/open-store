@@ -1,10 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: Test Geograph;
+  src: url(../assets/font/geograph-web-medium.woff2);
+}
+
+@font-face {
+  font-family: SF UI Text;
+  src: url(../assets/font/sf-ui-text-2-cufonfonts-webfont/SFUIText-Bold.woff);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: SF UI Text;
+  src: url(../assets/font/sf-ui-text-2-cufonfonts-webfont/SFUIText-Light.woff);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: SF UI Text;
+  src: url(../assets/font/sf-ui-text-2-cufonfonts-webfont/SFUIText-Medium.woff);
+  font-weight: 500;
+}
+
+html {
+  scroll-behavior: auto !important;
+}
+
 * {
   padding: 0%;
   margin: 0%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: SF UI Text;
 }
 
 html {
@@ -76,6 +103,10 @@ html {
   color: #3f3cd7;
 }
 
+.interFont {
+  font-family: "Inter", sans-serif;
+}
+
 .searchBtn {
   background-color: #3f3cd7;
   font-weight: 500;
@@ -93,6 +124,14 @@ html {
   padding-bottom: 7rem;
 }
 
+.textG {
+  font-family: Test Geograph;
+}
+
+.textS {
+  font-family: SF UI Text;
+}
+
 .head_color {
   color: #373f5b;
 }
@@ -102,13 +141,13 @@ html {
 }
 
 .newsletter_container {
-  margin-top: 5rem;
+  margin-top: 4rem;
   margin-bottom: 1rem;
 }
 
 .newsletter_container .inp_container input {
-  padding-left: 3.8rem;
-  height: 38px;
+  padding-left: 3.6rem;
+  height: 42px;
   background-color: #fff;
 }
 
@@ -150,7 +189,7 @@ html {
 }
 
 .newsletter_container button {
-  height: 38px;
+  height: 42px;
 }
 
 .newsletter_container2 {
@@ -159,7 +198,7 @@ html {
 
 .newsletter_container2 .inp_container input {
   padding-left: 3.7rem;
-  height: 38px;
+  height: 40px;
   background-color: #fff;
   font-size: 0.9rem;
 }
@@ -198,12 +237,12 @@ html {
 }
 
 .newsletter_container2 button {
-  height: 38px;
+  height: 40px;
   font-size: 0.8rem;
 }
 
 .newsletter_containerHeader .inp_container input {
-  padding-left: 3.2rem;
+  padding-left: 3.3rem;
   height: 36px;
   font-size: 0.8rem;
   width: 280px;
@@ -231,8 +270,8 @@ html {
 
 .newsletter_containerHeader .inp_container h6 {
   position: absolute;
-  left: 2.5%;
-  top: 50%;
+  left: 4%;
+  top: 46.2%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   font-size: 0.8rem;
@@ -305,7 +344,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1.5rem 0rem;
+  padding: 1.8rem 0rem;
   -webkit-transition: 0.7s;
   transition: 0.7s;
   z-index: 10000;
@@ -317,7 +356,7 @@ html {
 }
 
 .NavbarContainer h5 {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
 }
 
 .NavbarContainer .header_btn {
@@ -326,46 +365,48 @@ html {
   font-size: 600;
 }
 
+.NavbarContainer ul li a {
+  font-size: 14px;
+  font-weight: 500;
+}
+
 .NavbarContainerPinned {
   position: fixed;
-  top: -10%;
+  top: -20%;
   left: 0%;
-  display: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .NavbarContainerPinned.sticky {
-  display: block;
   position: fixed;
   top: 0%;
   left: 0%;
   width: 100%;
-  padding: 0.6rem 0rem;
+  padding: 0.8rem 0rem;
   background-color: #fff;
   -webkit-box-shadow: 1px 1px 5px #dbdbdb;
           box-shadow: 1px 1px 5px #dbdbdb;
-  -webkit-transition: 0.6s all;
-  transition: 0.6s all;
 }
 
 .NavbarContainer.mobilePinned {
   display: none;
-}
-
-.mobilePinned.sticky {
-  display: block;
   position: fixed;
   top: 0%;
   left: 0%;
+  padding: 1.2rem 0rem;
+}
+
+.mobilePinned.sticky {
+  display: none;
   width: 100%;
-  padding: 1rem 0rem;
   background-color: #fff;
-  -webkit-box-shadow: 1px 1px 5px #dbdbdb;
-          box-shadow: 1px 1px 5px #dbdbdb;
   -webkit-transition: 0.6s all;
   transition: 0.6s all;
 }
 
 .pinnedFooter {
+  display: none;
   position: fixed;
   bottom: -10%;
   width: 100%;
@@ -378,89 +419,31 @@ html {
 }
 
 .SideBarContainer {
-  position: fixed;
-  right: 0%;
-  left: 0%;
-  bottom: 0%;
-  color: #000;
-  font-size: 3.5rem;
-  background-color: #fff;
-  height: 100vh;
-  padding: 0rem 0rem 0rem 6rem;
-  z-index: 11111;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  width: 100%;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.SideBarContainer ul li button a {
-  padding: 0.3rem 0rem;
-  font-size: 1rem;
-  font-weight: 700;
+  -webkit-transition: 0.6s all;
+  transition: 0.6s all;
 }
 
 .SideBarContainer ul li {
-  margin-bottom: 2.5rem;
-  cursor: pointer;
-  font-weight: 500;
+  height: 55px;
 }
 
 .SideBarContainer ul li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 2rem;
-}
-
-.CrossBTn {
-  position: absolute;
-  top: 1%;
-  right: 4%;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 768px) {
-  .SideBarContainer {
-    font-size: 2.5rem;
-    padding: 0rem 0rem 0rem 4rem;
-  }
-  .SideBarContainer ul li a {
-    font-size: 1.5rem;
-  }
-  .CrossBTn {
-    position: absolute;
-    top: 3%;
-    left: 5.2%;
-    cursor: pointer;
-    font-size: 1.3rem;
-  }
+  font-size: 1.4rem;
 }
 
 .hero_container {
-  padding-top: 6rem;
+  padding-top: 5rem;
 }
 
 .hero_container h1 {
-  font-weight: 700;
-  font-size: 4.5rem;
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 100px;
 }
 
 .hero_container p {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  margin: 28px 0px;
 }
 
 .good_hands_container h3 {
@@ -470,11 +453,12 @@ html {
 }
 
 .good_hands_container .firstP {
-  margin-top: 1.4rem;
+  width: 85%;
   line-height: 34px;
-  word-spacing: 2.5px;
-  letter-spacing: 1px;
   color: #4b5063;
+  font-size: 1rem;
+  margin-top: 1.4rem;
+  margin-bottom: 2.2rem;
 }
 
 .good_hands_container .leave_brand_container {
@@ -507,7 +491,7 @@ html {
 }
 
 .offer_section {
-  padding-top: 7rem;
+  padding-top: 8rem;
   padding-bottom: 8rem;
 }
 
@@ -521,18 +505,24 @@ html {
 
 .offer_card p {
   width: 85%;
-}
-
-.offer_card:nth-child(3) p {
-  letter-spacing: 0.2px;
+  font-weight: 500 !important;
+  font-size: 0.9rem;
+  line-height: 30px;
 }
 
 .approach_container {
   margin-top: 6rem;
 }
 
+.approach_container p {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
 .approach_container .under_head {
+  font-weight: 400;
   color: #4b5063;
+  font-size: 1rem;
   line-height: 30px;
 }
 
@@ -544,6 +534,10 @@ html {
   height: 100%;
   border-radius: 4px;
   background: #f9f9fb;
+}
+
+.approach_container .approach_card h6 {
+  font-size: 1.1rem;
 }
 
 .approach_container .approach_card {
@@ -562,7 +556,6 @@ html {
 
 .approach_container .approach_card:nth-child(2) {
   border-bottom: 1px solid #e4e4e4;
-  padding-top: 2rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
@@ -593,8 +586,17 @@ html {
   margin-bottom: 10rem;
 }
 
+.getPaid_container h2 {
+  font-size: 2.4rem;
+}
+
 .getPaid_container .row {
   margin-top: 5rem;
+}
+
+.getPaid_container p {
+  font-size: 1.45rem;
+  font-weight: 500;
 }
 
 .stackUp_container {
@@ -604,6 +606,14 @@ html {
 
 .stackUp_container .box_container {
   margin-top: 3.5rem;
+}
+
+.stackUp_container h2 {
+  font-size: 2.4rem;
+}
+
+.stackUp_container .under_head {
+  font-size: 1rem;
 }
 
 .stackUp_container .news_letter_cont {
@@ -641,16 +651,19 @@ html {
 .faq_container .MuiPaper-root {
   -webkit-box-shadow: none;
           box-shadow: none;
+  font-family: SF UI Text;
 }
 
 .faq_container .MuiTypography-root {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   font-weight: 600;
+  font-family: SF UI Text;
 }
 
 .faq_container .MuiAccordionSummary-root {
   padding: 0px 16px 0px 0px;
+  font-family: SF UI Text;
 }
 
 .testimonials_container {
@@ -666,6 +679,14 @@ html {
   margin: auto;
 }
 
+.testimonials_container .testimonial_card .testiText {
+  font-weight: 500;
+}
+
+.testimonials_container .testimonial_card .testiUnder {
+  font-size: 1.1rem;
+}
+
 .testimonials_container .person_placeholder {
   height: 60px;
   width: 60px;
@@ -673,10 +694,11 @@ html {
   background-color: #f9f9fb;
 }
 
+.testimonials_container p {
+  line-height: 32px;
+}
+
 @media screen and (max-width: 998px) {
-  .NavbarContainer h5 {
-    font-style: italic;
-  }
   .NavbarContainer {
     display: none;
   }
@@ -706,12 +728,10 @@ html {
     height: 100px;
   }
   .stackUp_container .row .stackSection.stack1 {
-    background: #fff;
     padding: 1.5rem;
     border-radius: 15px;
   }
   .stackUp_container .row .stackSection.stack2 {
-    border: 1px solid #cecece;
     padding: 1.5rem;
     border-radius: 15px;
   }
@@ -748,15 +768,67 @@ html {
   .approach_container .approach_card:nth-child(4) .box {
     width: 66px;
   }
+  .hero_container {
+    padding-top: 6rem;
+  }
+  .hero_container h1 {
+    font-size: 3rem;
+    line-height: 48px;
+  }
+  .offer_section {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .offer_card p {
+    width: 100%;
+    line-height: 20px;
+  }
+  .middle_section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .good_hands_container h3 {
+    line-height: 48px;
+  }
+  .good_hands_container .firstP {
+    width: 100%;
+    line-height: 22px;
+  }
+  .approach_container .under_head {
+    line-height: 22px;
+  }
+  .getPaid_container {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .stackUp_container {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+  .stackUp_container .news_letter_cont {
+    padding-top: 4rem;
+  }
+  .testimonials_container {
+    margin-top: 5rem;
+  }
+  .testimonials_container p {
+    line-height: 25px;
+  }
+  .testimonials_container .testimonial_card {
+    padding: 20px 20px 20px;
+  }
+  .faq_container {
+    margin-top: 5rem;
+  }
+  .getPaid_container h2 {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 575px) {
-  .hero_container {
-    padding-top: 9rem;
-  }
   .hero_container .newsletter_container {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
   .hero_container .newsletter_container input {
     border: none;

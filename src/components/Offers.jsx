@@ -9,7 +9,7 @@ const Offers = () => {
 	const data = [
 		{
 			title: (
-				<h5 className="fw-bold lh-base h4 mb-4">
+				<h5 className="textG lh-base h4 mb-2 mb-md-4">
 					Get an offer <br className="d-none d-md-block" /> in 1 day
 				</h5>
 			),
@@ -18,7 +18,7 @@ const Offers = () => {
 		},
 		{
 			title: (
-				<h5 className="fw-bold lh-base h4 mb-4">
+				<h5 className="textG lh-base h4 mb-2 mb-md-4">
 					Cash out on <br className="d-none d-md-block" /> your schedule
 				</h5>
 			),
@@ -27,7 +27,7 @@ const Offers = () => {
 		},
 		{
 			title: (
-				<h5 className="fw-bold lh-base h4 mb-4">
+				<h5 className="textG lh-base h4 mb-2 mb-md-4">
 					Pursue your <br className="d-none d-md-block" /> next dream
 				</h5>
 			),
@@ -37,7 +37,7 @@ const Offers = () => {
 	];
 
 	return (
-		<div className="offer_section page_container mt-5">
+		<div className="offer_section page_container">
 			<div className="container-fluid">
 				{/* HERO START */}
 				<div className="row">
@@ -53,7 +53,7 @@ const Offers = () => {
 										<div className="row">
 											<div className="col-9 col-md-12 pe-0">
 												{prev.title}
-												<p className="lightColor lh-lg small">{prev.desc}</p>
+												<p className="lightColor textS">{prev.desc}</p>
 											</div>
 											<div className="col-3 col-md-8">
 												<img src={prev.img} alt="" />

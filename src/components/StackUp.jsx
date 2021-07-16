@@ -9,10 +9,12 @@ const StackUp = () => {
 		<div className="stackUp_container">
 			<div className="page_container">
 				<div className="container-fluid">
-					<h2 className="text-center fw-bold mb-4">See how we stack up</h2>
+					<h2 className="text-center head_color mb-4 textG">
+						See how we stack up
+					</h2>
 					<div className="row">
 						<div className="col-11 col-md-6 mx-auto">
-							<p className="text-center">
+							<p className="text-center under_head textS head_color">
 								We’re a team of founders and builders who have grown our own
 								e-commerce businesses and are committed to looking after yours.
 							</p>
@@ -23,31 +25,29 @@ const StackUp = () => {
 						<div className="row">
 							<div className="upperStackSection col-12 col-md-6 order-1 order-md-0">
 								<div className="stackSection stack2 mx-auto">
-									<h5 className="mt-3 head_color fw-bold">
-										Traditional Brokers
-									</h5>
+									<h5 className="mt-3 head_color textG">Traditional Brokers</h5>
 									<hr className="my-4" />
 									<div>
 										<div className="mt-3 d-flex align-items-center">
 											<img src={cross} alt="cross" />
-											<p className="d-none d-md-block mb-0 ms-3">
+											<p className="d-none d-md-block mb-0 ms-3 underHead_color textS">
 												Takes 3–6 months if you can find a buyer, with
 												uncertainty when it will close.
 											</p>
-											<p className="d-block d-md-none mb-0 ms-3">
+											<p className="d-block d-md-none mb-0 ms-3 underHead_color textS">
 												Get an offer within 24 hours and close quickly after
 												accepting.
 											</p>
 										</div>
 										<div className="mt-3 d-flex align-items-center">
 											<img src={cross} alt="cross" />
-											<p className="mb-0 ms-3">
+											<p className="mb-0 ms-3 underHead_color textS">
 												Brokers take 10% of your business.
 											</p>
 										</div>
 										<div className="mt-3 d-flex align-items-center">
 											<img src={cross} alt="cross" />
-											<p className="mb-0 ms-3">
+											<p className="mb-0 ms-3 underHead_color textS">
 												You’re locked into the business for long earnouts.
 											</p>
 										</div>
@@ -56,25 +56,25 @@ const StackUp = () => {
 							</div>
 							<div className="col-12 col-md-6">
 								<div className="stackSection stack1 mx-auto">
-									<h5 className="mt-3 head_color fw-bold">OpenStore</h5>
+									<h5 className="mt-3 head_color textG">OpenStore</h5>
 									<hr className="my-4" />
 									<div>
 										<div className="mt-3 d-flex align-items-center">
 											<img src={check} alt="cross" />
-											<p className="mb-0 ms-3">
+											<p className="mb-0 ms-3 head_color textS">
 												Get an offer <strong>within 24 hours</strong> and close
 												quickly after accepting.
 											</p>
 										</div>
 										<div className="mt-3 d-flex align-items-center">
 											<img src={check} alt="cross" />
-											<p className="mb-0 ms-3">
+											<p className="mb-0 ms-3 head_color textS">
 												<strong>Get paid</strong> and cut out the middleman.
 											</p>
 										</div>
 										<div className="mt-3 d-flex align-items-center">
 											<img src={check} alt="cross" />
-											<p className="mb-0 ms-3">
+											<p className="mb-0 ms-3 head_color textS">
 												<strong>You’re free</strong> to pursue what’s next.
 											</p>
 										</div>
@@ -86,7 +86,7 @@ const StackUp = () => {
 
 					{/* NEWSLETTER START */}
 					<div className="row news_letter_cont">
-						<div className="col-7 mx-auto">
+						<div className="col-12 col-md-7 mx-auto">
 							<div className="newsletter_container2 row px-3">
 								<div className="col-12 col-sm-9">
 									<div className="inp_container position-relative">
