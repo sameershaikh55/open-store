@@ -15,11 +15,11 @@ const OurApproach = () => {
 		},
 		{
 			title: "Every business has potential",
-			desc: "Our pricing and operating technology enables us to buy businesses others might not.",
+			desc: "OpenStore’s pricing and operating technology lets us to buy businesses others might not.",
 		},
 		{
 			title: "We’ll never sell your data",
-			desc: "Any data you share with us will only be used for accurate business valuations.",
+			desc: "Any information you share with us will only be used for accurate business valuations.",
 		},
 	];
 	return (

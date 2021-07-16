@@ -33,7 +33,7 @@ const GoodHands = () => {
 									);
 								})}
 							</div>
-							<div className="text-center mb-5">
+							<div className="d-block d-md-none text-center mb-5">
 								<img src={brandMobile} alt="brandMobile" />
 							</div>
 						</div>
