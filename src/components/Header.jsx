@@ -347,7 +347,7 @@ const Header = () => {
 				</div>
 			</div>
 
-			<div className="px-3">
+			<div className="px-3 d-block d-md-none">
 				<hr style={{ opacity: "1", marginTop: "4rem" }} className="mb-0" />
 			</div>
 			{/* PINNED HEADER MOBILE END */}

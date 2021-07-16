@@ -386,74 +386,29 @@ html {
 	font-size: 1.4rem;
 }
 
-// .SideBarContainer {
-// 	position: fixed;
-// 	right: 0%;
-// 	left: 0%;
-// 	bottom: 0%;
-// 	color: #000;
-// 	font-size: 3.5rem;
-// 	background-color: #fff;
-// 	height: 100vh;
-// 	padding: 0rem 0rem 0rem 6rem;
-// 	z-index: 11111;
-// 	display: flex;
-// 	align-items: center;
-// 	justify-content: start;
-// 	width: 100%;
-// 	overflow-y: hidden;
-// 	overflow-x: hidden;
-// 	transition: 0.5s;
-
-// 	ul li button a {
-// 		padding: 0.3rem 0rem;
-// 		font-size: 1rem;
-// 		font-weight: 700;
-// 	}
-// }
-
-// .SideBarContainer ul li {
-// 	margin-bottom: 2.5rem;
-// 	cursor: pointer;
-// 	font-weight: 500;
-
-// 	a {
-// 		display: flex;
-// 		align-items: center;
-// 		font-size: 2rem;
-// 	}
-// }
-
-// .CrossBTn {
-// 	position: absolute;
-// 	top: 1%;
-// 	right: 4%;
-// 	cursor: pointer;
-// }
-
-// @media screen and (max-width: 768px) {
-// 	.pinnedFooter {
-// 		display: block;
-// 	}
-// 	.mobilePinned,
-// 	.mobilePinned.sticky {
-// 		display: block;
-// 	}
-// 	.SideBarContainer {
-// 		font-size: 2.5rem;
-// 		padding: 0rem 0rem 0rem 4rem;
-// 	}
-// 	.SideBarContainer ul li a {
-// 		font-size: 1.5rem;
-// 	}
-// 	.CrossBTn {
-// 		position: absolute;
-// 		top: 3%;
-// 		left: 5.2%;
-// 		cursor: pointer;
-// 		font-size: 1.3rem;
-// 	}
-// }
+@media screen and (max-width: 768px) {
+	.pinnedFooter {
+		display: block;
+	}
+	.mobilePinned,
+	.mobilePinned.sticky {
+		display: block;
+	}
+	.SideBarContainer {
+		font-size: 2.5rem;
+		padding: 0rem 0rem 0rem 4rem;
+	}
+	.SideBarContainer ul li a {
+		font-size: 1.5rem;
+	}
+	.CrossBTn {
+		position: absolute;
+		top: 3%;
+		left: 5.2%;
+		cursor: pointer;
+		font-size: 1.3rem;
+	}
+}
 // ==== SIDEBAR END ====
 
 // HERO CONTAINER START
