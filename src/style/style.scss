@@ -2,7 +2,7 @@
 
 // IMPORTING FONTS START
 @font-face {
-	font-family: Test Geograph;
+	font-family: Geograph;
 	src: url(../assets/font/geograph-web-medium.woff2);
 }
 
@@ -25,6 +25,7 @@
 
 html {
 	scroll-behavior: auto !important;
+	overflow-x: hidden;
 }
 
 * {
@@ -85,6 +86,13 @@ html {
 	margin-right: auto;
 }
 
+@media only screen and (max-width: 1080px) and (min-width: 575px) {
+	.page_container {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
 .page_container2 {
 	max-width: 750px;
 	margin-left: auto;
@@ -111,7 +119,7 @@ html {
 	background-color: $color2;
 	font-weight: 500;
 	letter-spacing: 0.3px;
-	border-radius: 0.4rem;
+	border-radius: 8px !important;
 }
 
 .upper_section_mobile {
@@ -125,7 +133,7 @@ html {
 }
 
 .textG {
-	font-family: Test Geograph;
+	font-family: Geograph;
 }
 
 .textS {
@@ -138,6 +146,10 @@ html {
 
 .underHead_color {
 	color: #5d6688;
+}
+
+input {
+	border-radius: 8px;
 }
 
 .newsletter_container {
@@ -200,7 +212,7 @@ html {
 		h6 {
 			position: absolute;
 			left: 2%;
-			top: 50%;
+			top: 47.5%;
 			transform: translateY(-50%);
 			font-size: 0.9rem;
 		}
@@ -235,8 +247,8 @@ html {
 
 		h6 {
 			position: absolute;
-			left: 4%;
-			top: 46.2%;
+			left: 3.2%;
+			top: 47.2%;
 			transform: translateY(-50%);
 			font-size: 0.8rem;
 		}
@@ -319,7 +331,6 @@ html {
 
 	ul li a {
 		font-size: 14px;
-		font-weight: 500;
 	}
 }
 // HEADER END
@@ -339,7 +350,7 @@ html {
 	width: 100%;
 	padding: 0.8rem 0rem;
 	background-color: #fff;
-	box-shadow: 1px 1px 5px rgb(219, 219, 219);
+	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
 // FOR MOBILE START
@@ -370,6 +381,7 @@ html {
 
 .pinnedFooter.sticky {
 	bottom: 0%;
+	box-shadow: 0 -0.11rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 // PINNED FOOTER END
 
@@ -472,9 +484,9 @@ html {
 	}
 	p {
 		width: 85%;
-		font-weight: 500 !important;
-		font-size: 0.9rem;
+		font-size: 1rem;
 		line-height: 30px;
+		letter-spacing: -0.1px;
 	}
 }
 // .offer_card:nth-child(3) {
@@ -489,8 +501,7 @@ html {
 	margin-top: 6rem;
 
 	p {
-		font-size: 0.875rem;
-		font-weight: 500;
+		font-size: 0.9rem;
 	}
 
 	.under_head {
@@ -570,8 +581,8 @@ html {
 	}
 
 	p {
-		font-size: 1.45rem;
-		font-weight: 500;
+		font-size: 1.35rem;
+		line-height: 35px;
 	}
 }
 // GET PAID END
@@ -606,7 +617,7 @@ html {
 			// border-right: 1px solid #cecece;
 		}
 		.stackSection {
-			width: 90%;
+			width: 92%;
 
 			.box {
 				margin-left: auto;
@@ -621,6 +632,10 @@ html {
 				background: $color2;
 				font-weight: 500;
 				padding: 0.4rem 0rem;
+			}
+
+			hr {
+				margin: 1.8rem 0rem;
 			}
 		}
 	}
@@ -642,12 +657,16 @@ html {
 	}
 	.MuiTypography-root {
 		flex-basis: 100%;
-		font-weight: 600;
 		font-family: SF UI Text;
+		color: #000;
+		font-size: 1rem;
 	}
 	.MuiAccordionSummary-root {
-		padding: 0px 16px 0px 0px;
+		padding: 8px 16px 8px 0px;
 		font-family: SF UI Text;
+	}
+	.MuiAccordionDetails-root {
+		padding: 5px 120px 5px 0px;
 	}
 }
 // FAQ END
@@ -658,14 +677,15 @@ html {
 
 	.testimonial_card {
 		height: 100%;
-		border: 1px solid #ccc;
+		border: 1px solid #ececec;
 		border-radius: 12px;
-		padding: 24px 24px 24px;
+		padding: 20px 20px 20px;
 		width: 96% !important;
 		margin: auto;
 
 		.testiText {
-			font-weight: 500;
+			letter-spacing: 0.7px;
+			word-spacing: 1.5px;
 		}
 
 		.testiUnder {
@@ -681,7 +701,7 @@ html {
 	}
 
 	p {
-		line-height: 32px;
+		line-height: 28px;
 	}
 }
 // TESTIMONIALS END
@@ -699,6 +719,14 @@ html {
 	}
 	.NavbarContainer.mobilePinned {
 		display: block;
+	}
+	.testimonials_container {
+		.testimonial_card {
+			height: 240px;
+		}
+	}
+	.good_hands_container .firstP {
+		width: 100%;
 	}
 }
 
@@ -778,7 +806,6 @@ html {
 	}
 	.offer_card p {
 		width: 100%;
-		line-height: 20px;
 	}
 	.middle_section {
 		padding-top: 4rem;
@@ -820,6 +847,23 @@ html {
 	.getPaid_container h2 {
 		font-size: 2rem;
 	}
+	.stackUp_container .row .stackSection hr {
+		margin: 1.3rem 0rem;
+	}
+	.newsletter_containerFooter .inp_container input {
+		padding-left: 3.5rem;
+	}
+	.faq_container .MuiAccordionDetails-root {
+		padding: 5px 25px 5px 0px;
+	}
+	.testimonials_container {
+		.testimonial_card {
+			height: 200px;
+		}
+	}
+	.offer_card img {
+		width: 60%;
+	}
 }
 
 @media screen and (max-width: 575px) {
@@ -855,7 +899,7 @@ html {
 	}
 	.searchBtn {
 		background-color: #5a59e4;
-		border-radius: 0.7rem;
+		border-radius: 8px !important;
 	}
 
 	.getPaid_container {
@@ -874,6 +918,13 @@ html {
 		img {
 			width: 100%;
 		}
+	}
+	.offer_card p {
+		width: 100%;
+		line-height: 22px;
+	}
+	.newsletter_containerFooter .inp_container input {
+		padding-left: 3.1rem;
 	}
 }
 

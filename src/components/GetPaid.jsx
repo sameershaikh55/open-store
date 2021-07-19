@@ -2,13 +2,13 @@ import React from "react";
 
 const GetPaid = () => {
 	const data = [
-		<p className="head_color interFont">
+		<p className="head_color interFont my-4 py-2">
 			Answer a short form & <br /> automate the rest.
 		</p>,
-		<p className="head_color interFont">
-			Get your offer within <br /> 24 hours.
+		<p className="head_color interFont my-4 py-2">
+			Get your offer within <br /> 1 business day.
 		</p>,
-		<p className="head_color interFont">
+		<p className="head_color interFont my-4 py-2">
 			Close in days, not <br /> months.
 		</p>,
 	];
@@ -24,7 +24,7 @@ const GetPaid = () => {
 							<div className="row">
 								{data.map((prev, i) => {
 									return (
-										<div key={i} className={`col-10 col-sm-4 mt-5 mx-auto`}>
+										<div key={i} className={`col-10 col-md-4 mt-5 mx-auto`}>
 											<div className="mx-auto">
 												<h3 className="mb-4 purpleColor textS">{i + 1}</h3>
 												{prev}

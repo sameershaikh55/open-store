@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
 		fontSize: theme.typography.pxToRem(15),
 		flexBasis: "33.33%",
 		flexShrink: 0,
+		fontWeight: 500,
 	},
 	secondaryHeading: {
 		fontSize: theme.typography.pxToRem(15),
@@ -53,8 +54,9 @@ export default function Faq() {
 								</AccordionSummary>
 								<AccordionDetails>
 									<Typography>
-										Nulla facilisi. Phasellus sollicitudin nulla et quam mattis
-										feugiat. Aliquam eget maximus est, id dignissim quam.
+										Our pricing engine automatically builds an offer for your
+										business by analyzing its customer health, profitability,
+										and recent growth.
 									</Typography>
 								</AccordionDetails>
 							</Accordion>
@@ -73,9 +75,8 @@ export default function Faq() {
 								</AccordionSummary>
 								<AccordionDetails>
 									<Typography>
-										Donec placerat, lectus sed mattis semper, neque lectus
-										feugiat lectus, varius pulvinar diam eros in elit.
-										Pellentesque convallis laoreet laoreet.
+										We’re committed to using your business data for pricing
+										purposes only. We don’t share or sell your data.
 									</Typography>
 								</AccordionDetails>
 							</Accordion>
@@ -94,9 +95,9 @@ export default function Faq() {
 								</AccordionSummary>
 								<AccordionDetails>
 									<Typography>
-										Nunc vitae orci ultricies, auctor nunc in, volutpat nisl.
-										Integer sit amet egestas eros, vitae egestas augue. Duis vel
-										est augue.
+										After you submit the info that OpenStore uses to build an
+										offer for your business, you can expect a price within 24
+										hours.
 									</Typography>
 								</AccordionDetails>
 							</Accordion>
@@ -115,27 +116,32 @@ export default function Faq() {
 								</AccordionSummary>
 								<AccordionDetails>
 									<Typography>
-										Nunc vitae orci ultricies, auctor nunc in, volutpat nisl.
-										Integer sit amet egestas eros, vitae egestas augue. Duis vel
-										est augue.
+										No. OpenStore’s pricing process is free and without any
+										obligation. It is an opportunity to explore what your
+										business is worth.
 									</Typography>
 								</AccordionDetails>
 							</Accordion>
 						</div>
-						<div className="col-12 col-sm-6 col-md-4 my-4">
-							<p className="lightColor lh-lg textS">
-								Need help? Feel free to reach out to our team to walk you
-								through the process and answer any questions you might have.
-							</p>
+						<div className="col-12 col-sm-8 col-md-5 col-lg-4 my-4">
+							<div className="row">
+								<div className="col-12 col-lg-9 mx-auto">
+									<p className="lightColor lh-lg textS mx-auto">
+										Need help? Feel free to reach out to our team to walk you
+										through the process and answer any questions you might have.
+									</p>
 
-							<div className="bottom_link mt-4">
-								<a
-									href=""
-									className="fw-bold purpleColor text-decoration-none textS"
-								>
-									Find out if your business is a fit
-									<BiRightArrowAlt fontSize="1.2rem" />
-								</a>
+									<div className="bottom_link mt-4 mx-auto">
+										<a
+											href="mailto:hello@open.store"
+											target="blank"
+											className="fw-bold purpleColor text-decoration-none textS"
+										>
+											Reach out to our team
+											<BiRightArrowAlt fontSize="1.2rem" />
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>

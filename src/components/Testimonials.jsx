@@ -18,7 +18,7 @@ const Testimonials = () => {
 		arrows: false,
 		responsive: [
 			{
-				breakpoint: 575,
+				breakpoint: 768,
 				settings: {
 					slidesToShow: 1,
 					infinite: true,
@@ -40,16 +40,15 @@ const Testimonials = () => {
 								<div className="testimonial_card d-flex flex-column justify-content-between">
 									<div>
 										<p className="testiText head_color textS">
-											OpenStore brought a level of
+											OpenStore brought a level of{" "}
 											<strong>professionalism</strong> to the table that was{" "}
-											<strong>a breath of fresh air</strong>
-											and we look forward to working with everyone more in the
-											near future!
+											<strong>a breath of fresh air</strong> and we look forward
+											to working with everyone more in the near future!
 										</p>
 									</div>
 									<p className="testiUnder mb-0 underHead_color">
 										<small>
-											Ecommerce founder in the children’s apparel space
+											E-commerce founder in the children’s apparel space
 										</small>
 									</p>
 								</div>
@@ -64,7 +63,7 @@ const Testimonials = () => {
 										</p>
 									</div>
 									<p className="testiUnder mb-0 underHead_color">
-										<small>Ecommerce founder in the swimwear space</small>
+										<small>E-commerce founder in the swimwear space</small>
 									</p>
 								</div>
 							</Slider>

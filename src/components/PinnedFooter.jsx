@@ -3,17 +3,17 @@ import React, { useState } from "react";
 import { BsArrowRightShort } from "react-icons/bs";
 
 const PinnedFooter = () => {
-  const [handleBtn, setHandleBtn] = useState(false);
+	const [handleBtn, setHandleBtn] = useState(false);
 
-  // FOR MOBILE NAVBAR SCROLLING EFFECT START
-  window.addEventListener("scroll", function () {
+	// FOR MOBILE NAVBAR SCROLLING EFFECT START
+	window.addEventListener("scroll", function () {
 		var header = document.querySelector(".pinnedFooter");
 		header.classList.toggle("sticky", window.scrollY > 300);
 	});
 	// FOR MOBILE NAVBAR SCROLLING EFFECT END
 
 	return (
-		<div className="pinnedFooter shadow bg-white p-3 px-3">
+		<div className="pinnedFooter bg-white p-3 px-3">
 			{(handleBtn && (
 				<div>
 					{/* NEWSLETTER START */}
@@ -21,7 +21,7 @@ const PinnedFooter = () => {
 						<div className="inp_container position-relative">
 							<input
 								type="text"
-								className="w-100 rounded-3"
+								className="w-100"
 								placeholder="Enter your store website"
 							/>
 							<h6 className="themeColor">http://</h6>

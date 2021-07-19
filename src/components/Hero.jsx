@@ -4,7 +4,7 @@ import React from "react";
 import illustration from "../assets/underHero.svg";
 
 const Hero = () => {
-  return (
+	return (
 		<>
 			<div className="hero_container">
 				<div className="page_container2">
@@ -30,7 +30,7 @@ const Hero = () => {
 										<div className="inp_container position-relative">
 											<input
 												type="text"
-												className="w-100 rounded-3 border-0"
+												className="w-100 border-0"
 												placeholder="Enter your store website"
 											/>
 											<h6 className="themeColor">http://</h6>
@@ -54,7 +54,9 @@ const Hero = () => {
 			<div className="page_container">
 				<div className="container-fluid px-0 px-md-4">
 					<img className="w-100" src={illustration} alt="illustration" />
-					<hr style={{ height: "3px" }} className="mt-0" />
+					<hr
+						style={{ height: "1px", background: "#373F5B", marginTop: "-1px" }}
+					/>
 				</div>
 			</div>
 			{/* HERO ILLUSTRATION SECTION END */}

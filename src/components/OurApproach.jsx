@@ -15,7 +15,7 @@ const OurApproach = () => {
 		},
 		{
 			title: "Every business has potential",
-			desc: "OpenStore’s pricing and operating technology lets us to buy businesses others might not.",
+			desc: "OpenStore’s pricing and operating technology lets us buy businesses others might not.",
 		},
 		{
 			title: "We’ll never sell your data",
@@ -62,17 +62,17 @@ const OurApproach = () => {
 					<div className="row mt-4 mt-md-5">
 						<div className="col-12 col-md-7 mx-auto">
 							<div className="newsletter_container2 row px-3">
-								<div className="col-12 col-sm-9">
+								<div className="col-12 col-sm-8 col-lg-9">
 									<div className="inp_container position-relative">
 										<input
 											type="text"
-											className="w-100 rounded-3 border-0"
+											className="w-100 border-0"
 											placeholder="Enter your store website"
 										/>
 										<h6 className="textS">http://</h6>
 									</div>
 								</div>
-								<div className="col-12 col-sm-3 mt-3 mt-sm-0 ps-2 ps-sm-0">
+								<div className="col-12 col-sm-4 col-lg-3 mt-3 mt-sm-0 ps-2 ps-sm-0">
 									<button className="searchBtn small mb-0 w-100 text-white border-0">
 										Get My Free Offer
 									</button>

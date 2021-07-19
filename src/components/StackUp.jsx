@@ -22,62 +22,56 @@ const StackUp = () => {
 					</div>
 
 					<div className="box_container row justify-content-around">
-						<div className="row">
-							<div className="upperStackSection col-12 col-md-6 order-1 order-md-0">
-								<div className="stackSection stack2 mx-auto">
-									<h5 className="mt-3 head_color textG">Traditional Brokers</h5>
-									<hr className="my-4" />
-									<div>
-										<div className="mt-3 d-flex align-items-center">
-											<img src={cross} alt="cross" />
-											<p className="d-none d-md-block mb-0 ms-3 underHead_color textS">
-												Takes 3–6 months if you can find a buyer, with
-												uncertainty when it will close.
-											</p>
-											<p className="d-block d-md-none mb-0 ms-3 underHead_color textS">
-												Get an offer within 24 hours and close quickly after
-												accepting.
-											</p>
-										</div>
-										<div className="mt-3 d-flex align-items-center">
-											<img src={cross} alt="cross" />
-											<p className="mb-0 ms-3 underHead_color textS">
-												Brokers take 10% of your business.
-											</p>
-										</div>
-										<div className="mt-3 d-flex align-items-center">
-											<img src={cross} alt="cross" />
-											<p className="mb-0 ms-3 underHead_color textS">
-												You’re locked into the business for long earnouts.
-											</p>
-										</div>
+						<div className="upperStackSection col-12 col-md-6	">
+							<div className="stackSection stack2 me-auto">
+								<h5 className="mt-3 head_color textG">Traditional Brokers</h5>
+								<hr />
+								<div>
+									<div className="mt-4 d-flex align-items-center">
+										<img src={cross} alt="cross" />
+										<p className="mb-0 ms-3 underHead_color textS">
+											Takes 3–6 months if you can find a buyer, with uncertainty
+											when it will close.
+										</p>
+									</div>
+									<div className="mt-4 d-flex align-items-center">
+										<img src={cross} alt="cross" />
+										<p className="mb-0 ms-3 underHead_color textS">
+											Brokers take 10% of your business.
+										</p>
+									</div>
+									<div className="mt-4 d-flex align-items-center">
+										<img src={cross} alt="cross" />
+										<p className="mb-0 ms-3 underHead_color textS">
+											You’re locked into the business for long earnouts.
+										</p>
 									</div>
 								</div>
 							</div>
-							<div className="col-12 col-md-6">
-								<div className="stackSection stack1 mx-auto">
-									<h5 className="mt-3 head_color textG">OpenStore</h5>
-									<hr className="my-4" />
-									<div>
-										<div className="mt-3 d-flex align-items-center">
-											<img src={check} alt="cross" />
-											<p className="mb-0 ms-3 head_color textS">
-												Get an offer <strong>within 24 hours</strong> and close
-												quickly after accepting.
-											</p>
-										</div>
-										<div className="mt-3 d-flex align-items-center">
-											<img src={check} alt="cross" />
-											<p className="mb-0 ms-3 head_color textS">
-												<strong>Get paid</strong> and cut out the middleman.
-											</p>
-										</div>
-										<div className="mt-3 d-flex align-items-center">
-											<img src={check} alt="cross" />
-											<p className="mb-0 ms-3 head_color textS">
-												<strong>You’re free</strong> to pursue what’s next.
-											</p>
-										</div>
+						</div>
+						<div className="col-12 col-md-6">
+							<div className="stackSection stack1 ms-auto">
+								<h5 className="mt-3 head_color textG">OpenStore</h5>
+								<hr />
+								<div>
+									<div className="mt-4 d-flex align-items-center">
+										<img src={check} alt="cross" />
+										<p className="mb-0 ms-3 head_color textS">
+											Get an offer <strong> within 1 business day</strong> and
+											close quickly after accepting.
+										</p>
+									</div>
+									<div className="mt-4 d-flex align-items-center">
+										<img src={check} alt="cross" />
+										<p className="mb-0 ms-3 head_color textS">
+											Get paid and <strong> cut out the middleman.</strong>
+										</p>
+									</div>
+									<div className="mt-4 d-flex align-items-center">
+										<img src={check} alt="cross" />
+										<p className="mb-0 ms-3 head_color textS">
+											<strong>You’re free</strong> to pursue what’s next.
+										</p>
 									</div>
 								</div>
 							</div>
@@ -92,7 +86,7 @@ const StackUp = () => {
 									<div className="inp_container position-relative">
 										<input
 											type="text"
-											className="w-100 rounded-3 border-0"
+											className="w-100 border-0"
 											placeholder="Enter your store website"
 										/>
 										<h6>http://</h6>

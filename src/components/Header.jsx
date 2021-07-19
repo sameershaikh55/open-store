@@ -139,7 +139,6 @@ const Header = () => {
 										<div className="inp_container position-relative">
 											<input
 												type="text"
-												className="rounded-3"
 												placeholder="Enter your store website"
 											/>
 											<h6>http://</h6>
@@ -333,7 +332,7 @@ const Header = () => {
 								<li>
 									<a
 										href="https://jobs.lever.co/OpenStore/"
-										className="text-decoration-none text-dark h6 mb-0"
+										className="text-decoration-none text-dark h6 mb-0 fw-light"
 										target="blank"
 									>
 										Jobs

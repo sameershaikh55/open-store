@@ -16,10 +16,10 @@ const GoodHands = () => {
 			<div className="page_container">
 				<div className="container-fluid">
 					<div className="row">
-						<div className="col-11 col-lg-8 mx-auto mx-sm-0 me-sm-auto">
+						<div className="col-11 col-sm-12 col-lg-8 mx-auto mx-sm-0 me-sm-auto">
 							<h3 className="textG">
 								Leave your business in the right
-								<br className="d-none d-md-block" /> hands
+								<br className="d-none d-lg-block" /> hands
 							</h3>
 							<p className="firstP textS">
 								We’re a proven group of e-commerce experts and operators who
